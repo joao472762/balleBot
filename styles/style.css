@@ -1,116 +1,122 @@
-/*Global==========*/
+/*global==============*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 *{
-    margin:0;
-    padding:0;
-    border: 0;
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    box-sizing: border-box;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Sarala", sans-serif, serif;
+}
+:root{
+    --white: #FFF2E7;
+    --brownClean: #ECD6C4;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Righteous', 'cursive',Times;
+    color: var(--white);
+    font-weight: 400;
 }
 body{
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 }
-header, main{
-    width: 70%;
-    margin: 0 auto;
-}
-/* global=============*/
+/*global==============*/
 
-/*header===============*/
+/*header==============*/
 header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 1px solid white;
-    padding: 50px 20px 30px 0px;
+    padding-top: 30px;
+    display:flex;
+    align-items: center;
+    justify-content:space-around
 }
-header svg{ 
-    margin-top: -20px
-}
-
-/*nav========*/
+/*nav==========*/
 nav{
     display: flex;
-    gap: 30px;
+    gap:30px
 }
 nav a {
-    color: white;
-    font-size: 18px;
-    min-width: 120px;
+    color: var(--white);
+    transition-duration: 0.1s;
 }
-nav a:nth-of-type(1){
-
-    width: 180px
+nav a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+    font-size: 17px;
 }
-/*nav========*/
+/*nav==========*/
+/*header==============*/
 
-/*header===============*/
-
-/*main=================*/
-
-/*presentation===*/
-main #presentation{
+/*main====================*/
+main{
     display: flex;
-    margin-top: 80px
+    flex-direction: column;
+    border-top: 0.4px solid var(--white);
+    margin-top: 20px;
 }
-main #presentation h1{
-    font-size: 50px;
-    color: #fff
-}
-#presentation p{
-    color: rgb(214, 214, 214);
-    font-size: 17;
-    margin: 50px 0
-}
-#presentation button{
-    background: #fff;
-    padding: 13px;
-    font-size: 18px;
-    border-radius: 8px
-}
-#presentation svg{
-    
-    
-    margin: -30px auto 0px auto;
-    width: 300px;
-    height: 300px;
-   
-}
-/*presentation===*/
-/*aboutUs========*/
-#aboutUs{
-    text-align: center;
-    color: #fff;
-    position: relative;
-    margin-top: 100px
+/*<section>#mainContent=*/
+#mainContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     
 }
-#aboutUs h2::before{
-    content: '';
-    margin-top: -60px;
-    width: 260px;
-    height: 1px;
-    background: rgb(172, 172, 172);
-    position: absolute;
+/*.text=====*/
+#mainContent .text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+#mainContent .text h1{
+    font-size: 64px;
+}
+#mainContent .text h2{
+    font-size: 24px;
+}
+.text button{
+    background-color: var(--brownClean);
+    width: 185px;
+    height: 67px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-size: 24px;
+    transition-duration: 0.8s;
+    cursor: pointer;
+  
+}
+.text button:hover{
+    opacity: 0.6;
+}
+/*.text=====*/
+/*<section>#mainContent=*/
 
+/*<section>#secondContent=*/
+#secondContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:22px
 }
-#aboutUs h2{
-    margin: 20px 0px;
+#secondContent h2{
+    border-top: 0.4px solid var(--white);
+    padding-top: 64px;
+    margin-bottom: 18px;
 }
-#aboutUs p{
-    margin: 15px 0px ;
-    
+#secondContent p{
+    color: var(--white);
+    font-size: 18px;
 }
-#aboutUs span{
-    font-weight: 600;
-}
-/*main=================*/
-/*footer===============*/
+/*<section>#secondContent=*/
+/*main======================*/
+
+/*footer====================*/
 footer{
+    border-top: 0.4px solid var(--white);
     margin-top: 40px;
-    display: flex;
-    border-top: 1px solid gray;
-
+    padding: 40px;
 }
-footer svg{
-    margin: 30px auto;
-    
+footer img{
+    display: block;
+    margin: 0 auto;
 }
+/*footer====================*/
